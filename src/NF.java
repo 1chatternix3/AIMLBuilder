@@ -1,4 +1,5 @@
 
+import java.awt.Color;
 import java.awt.Component;
 import java.awt.Desktop;
 import java.io.BufferedReader;
@@ -29,7 +30,19 @@ public class NF extends javax.swing.JFrame {
      */
     public NF() {
         initComponents();
-        jTextField1.requestFocusInWindow();
+        jTextField22.requestFocusInWindow();
+        jTextField1.setEditable(false);
+        jTextField1.setBackground(Color.red);
+        jTextField5.setEditable(false);
+        jTextField5.setBackground(Color.red);
+        jTextField7.setEditable(false);
+        jTextField7.setBackground(Color.red);
+        jTextField13.setEditable(false);
+        jTextField13.setBackground(Color.red);
+        jTextField14.setEditable(false);
+        jTextField14.setBackground(Color.red);
+        
+
     
     }
 
@@ -58,42 +71,54 @@ public class NF extends javax.swing.JFrame {
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
         jTextField10 = new javax.swing.JTextField();
-        jButton21 = new javax.swing.JButton();
         jTextField11 = new javax.swing.JTextField();
         jLabel14 = new javax.swing.JLabel();
-        jPanel2 = new javax.swing.JPanel();
+        jButton21 = new javax.swing.JButton();
+        jPanel3 = new javax.swing.JPanel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jTextField12 = new javax.swing.JTextField();
+        jTextField6 = new javax.swing.JTextField();
+        jButton18 = new javax.swing.JButton();
+        jPanel4 = new javax.swing.JPanel();
+        jTextField23 = new javax.swing.JTextField();
+        button_srai = new javax.swing.JToggleButton();
+        jButton23 = new javax.swing.JButton();
+        button_think = new javax.swing.JToggleButton();
+        button_that = new javax.swing.JToggleButton();
+        jPanel5 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
         jTextField3 = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
         jButton7 = new javax.swing.JButton();
-        jButton12 = new javax.swing.JButton();
-        jButton13 = new javax.swing.JButton();
-        jButton14 = new javax.swing.JButton();
-        jButton10 = new javax.swing.JButton();
-        jButton17 = new javax.swing.JButton();
-        jButton18 = new javax.swing.JButton();
-        jTextField6 = new javax.swing.JTextField();
-        jTextField12 = new javax.swing.JTextField();
-        jTextField13 = new javax.swing.JTextField();
-        jTextField7 = new javax.swing.JTextField();
-        jTextField5 = new javax.swing.JTextField();
-        jTextField4 = new javax.swing.JTextField();
+        jPanel6 = new javax.swing.JPanel();
         jTextField2 = new javax.swing.JTextField();
-        jTextField1 = new javax.swing.JTextField();
-        jLabel9 = new javax.swing.JLabel();
-        jButton20 = new javax.swing.JButton();
-        jButton19 = new javax.swing.JButton();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
+        button_setname = new javax.swing.JToggleButton();
+        button_star = new javax.swing.JToggleButton();
+        jTextField4 = new javax.swing.JTextField();
+        jButton24 = new javax.swing.JButton();
+        jTextField15 = new javax.swing.JTextField();
+        button_getname = new javax.swing.JToggleButton();
+        jTextField16 = new javax.swing.JTextField();
+        button_think1 = new javax.swing.JToggleButton();
+        jPanel7 = new javax.swing.JPanel();
+        jTextField22 = new javax.swing.JTextField();
+        jPanel2 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
+        jTextField5 = new javax.swing.JTextField();
+        jTextField7 = new javax.swing.JTextField();
+        jTextField13 = new javax.swing.JTextField();
+        jTextField14 = new javax.swing.JTextField();
+        jButton10 = new javax.swing.JButton();
+        button_random = new javax.swing.JToggleButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("AIML  building kit");
+        setTitle("AIML Editor v1.01");
 
         jTextArea1.setColumns(20);
         jTextArea1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
@@ -152,7 +177,7 @@ public class NF extends javax.swing.JFrame {
             }
         });
 
-        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("learn"));
+        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("Learn"));
 
         jTextField8.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jTextField8.addActionListener(new java.awt.event.ActionListener() {
@@ -184,6 +209,11 @@ public class NF extends javax.swing.JFrame {
             }
         });
 
+        jTextField11.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        jLabel14.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel14.setText("Template");
+
         jButton21.setText("add");
         jButton21.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -191,31 +221,25 @@ public class NF extends javax.swing.JFrame {
             }
         });
 
-        jTextField11.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-
-        jLabel14.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel14.setText("Template");
-
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel13, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel11, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel12, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel14, javax.swing.GroupLayout.Alignment.TRAILING))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jTextField11, javax.swing.GroupLayout.DEFAULT_SIZE, 427, Short.MAX_VALUE)
-                    .addComponent(jTextField9)
+                    .addComponent(jLabel11)
+                    .addComponent(jLabel14)
+                    .addComponent(jLabel12)
+                    .addComponent(jLabel13))
+                .addGap(33, 33, 33)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jTextField10)
-                    .addComponent(jTextField8))
+                    .addComponent(jTextField11, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jTextField8)
+                    .addComponent(jTextField9, javax.swing.GroupLayout.Alignment.TRAILING))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton21, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(1, 1, 1))
+                .addComponent(jButton21))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -233,14 +257,153 @@ public class NF extends javax.swing.JFrame {
                     .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel12))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton21)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jTextField11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jButton21))
                     .addComponent(jLabel13))
+                .addContainerGap(13, Short.MAX_VALUE))
+        );
+
+        jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder("OOB MRL"));
+
+        jLabel10.setText("OOB Template");
+
+        jLabel8.setText("OOB MRL");
+
+        jTextField12.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField12ActionPerformed(evt);
+            }
+        });
+
+        jTextField6.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField6ActionPerformed(evt);
+            }
+        });
+
+        jButton18.setText("add");
+        jButton18.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton18ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel10)
+                    .addComponent(jLabel8))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jTextField12, javax.swing.GroupLayout.DEFAULT_SIZE, 643, Short.MAX_VALUE)
+                    .addComponent(jTextField6))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton18))
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jTextField12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel10))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jButton18))
+                    .addComponent(jLabel8))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder("standard templates"));
+        jPanel4.setBorder(javax.swing.BorderFactory.createTitledBorder("Standard Template"));
+
+        jTextField23.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField23.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField23ActionPerformed(evt);
+            }
+        });
+
+        button_srai.setBackground(new java.awt.Color(255, 255, 255));
+        button_srai.setText("srai");
+        button_srai.setToolTipText("</srai>");
+        button_srai.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                button_sraiActionPerformed(evt);
+            }
+        });
+
+        jButton23.setText("add");
+        jButton23.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton23ActionPerformed(evt);
+            }
+        });
+
+        button_think.setBackground(new java.awt.Color(255, 255, 255));
+        button_think.setText("think");
+        button_think.setToolTipText("</think>");
+        button_think.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                button_thinkActionPerformed(evt);
+            }
+        });
+
+        button_that.setBackground(new java.awt.Color(255, 255, 255));
+        button_that.setText("that");
+        button_that.setToolTipText("</that>");
+        button_that.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                button_thatActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addGap(88, 88, 88)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addComponent(jTextField23, javax.swing.GroupLayout.PREFERRED_SIZE, 639, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addComponent(button_srai)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(button_think)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(button_that)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButton23, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))))
+        );
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jTextField23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(button_srai)
+                    .addComponent(button_think)
+                    .addComponent(button_that)
+                    .addComponent(jButton23))
+                .addGap(85, 85, 85))
+        );
+
+        jPanel5.setBorder(javax.swing.BorderFactory.createTitledBorder("set/end Topic"));
+
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel1.setText("Topic name");
 
         jTextField3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jTextField3.addActionListener(new java.awt.event.ActionListener() {
@@ -263,80 +426,56 @@ public class NF extends javax.swing.JFrame {
             }
         });
 
-        jButton12.setText("add");
-        jButton12.addActionListener(new java.awt.event.ActionListener() {
+        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
+        jPanel5.setLayout(jPanel5Layout);
+        jPanel5Layout.setHorizontalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 531, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton7)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel5Layout.setVerticalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel1)
+                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton1)
+                    .addComponent(jButton7)))
+        );
+
+        jPanel6.setBorder(javax.swing.BorderFactory.createTitledBorder("Advanced Template"));
+
+        jTextField2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton12ActionPerformed(evt);
+                jTextField2ActionPerformed(evt);
             }
         });
 
-        jButton13.setText("add");
-        jButton13.addActionListener(new java.awt.event.ActionListener() {
+        button_setname.setBackground(new java.awt.Color(255, 255, 255));
+        button_setname.setText("set name =");
+        button_setname.setToolTipText("\"><star/></set>");
+        button_setname.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton13ActionPerformed(evt);
+                button_setnameActionPerformed(evt);
             }
         });
 
-        jButton14.setText("add");
-        jButton14.addActionListener(new java.awt.event.ActionListener() {
+        button_star.setBackground(new java.awt.Color(255, 255, 255));
+        button_star.setText("star");
+        button_star.setToolTipText(" <star/>");
+        button_star.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton14ActionPerformed(evt);
-            }
-        });
-
-        jButton10.setText("add");
-        jButton10.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton10ActionPerformed(evt);
-            }
-        });
-
-        jButton17.setText("add");
-        jButton17.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton17ActionPerformed(evt);
-            }
-        });
-
-        jButton18.setText("add");
-        jButton18.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton18ActionPerformed(evt);
-            }
-        });
-
-        jTextField6.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField6ActionPerformed(evt);
-            }
-        });
-
-        jTextField12.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField12.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField12ActionPerformed(evt);
-            }
-        });
-
-        jTextField13.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField13.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField13ActionPerformed(evt);
-            }
-        });
-
-        jTextField7.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField7.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField7ActionPerformed(evt);
-            }
-        });
-
-        jTextField5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField5ActionPerformed(evt);
+                button_starActionPerformed(evt);
             }
         });
 
@@ -347,12 +486,127 @@ public class NF extends javax.swing.JFrame {
             }
         });
 
-        jTextField2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField2.addActionListener(new java.awt.event.ActionListener() {
+        jButton24.setText("add");
+        jButton24.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField2ActionPerformed(evt);
+                jButton24ActionPerformed(evt);
             }
         });
+
+        jTextField15.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField15ActionPerformed(evt);
+            }
+        });
+
+        button_getname.setBackground(new java.awt.Color(255, 255, 255));
+        button_getname.setText("get name =");
+        button_getname.setToolTipText("\"/>");
+        button_getname.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                button_getnameActionPerformed(evt);
+            }
+        });
+
+        jTextField16.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField16ActionPerformed(evt);
+            }
+        });
+
+        button_think1.setBackground(new java.awt.Color(255, 255, 255));
+        button_think1.setText("think");
+        button_think1.setToolTipText("</think>");
+        button_think1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                button_think1ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
+        jPanel6.setLayout(jPanel6Layout);
+        jPanel6Layout.setHorizontalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 645, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGap(90, 90, 90)
+                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jTextField4)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
+                                .addComponent(button_setname)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jTextField15, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(button_getname)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jTextField16, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(button_think1)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(button_star)))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jButton24)
+                .addGap(2, 2, 2))
+        );
+        jPanel6Layout.setVerticalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(button_setname)
+                    .addComponent(button_star)
+                    .addComponent(jTextField15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(button_getname)
+                    .addComponent(jTextField16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(button_think1))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton24)))
+        );
+
+        jPanel7.setBorder(javax.swing.BorderFactory.createTitledBorder("Pattern"));
+
+        jTextField22.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField22.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField22ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
+        jPanel7.setLayout(jPanel7Layout);
+        jPanel7Layout.setHorizontalGroup(
+            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel7Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jTextField22, javax.swing.GroupLayout.PREFERRED_SIZE, 639, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(68, 68, 68))
+        );
+        jPanel7Layout.setVerticalGroup(
+            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jTextField22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+
+        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder("Random Template"));
+
+        jLabel2.setText("li 1");
+
+        jLabel3.setText("li 2");
+
+        jLabel4.setText("li 3");
+
+        jLabel5.setText("li 4");
+
+        jLabel6.setText("li 5");
 
         jTextField1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
@@ -361,173 +615,147 @@ public class NF extends javax.swing.JFrame {
             }
         });
 
-        jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel9.setText("li");
-
-        jButton20.setText("end random");
-        jButton20.addActionListener(new java.awt.event.ActionListener() {
+        jTextField5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton20ActionPerformed(evt);
+                jTextField5ActionPerformed(evt);
             }
         });
 
-        jButton19.setText("add random");
-        jButton19.addActionListener(new java.awt.event.ActionListener() {
+        jTextField7.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton19ActionPerformed(evt);
+                jTextField7ActionPerformed(evt);
             }
         });
 
-        jLabel8.setText("OOB MRL");
+        jTextField13.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField13ActionPerformed(evt);
+            }
+        });
 
-        jLabel10.setText("OOB Template");
+        jTextField14.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField14ActionPerformed(evt);
+            }
+        });
 
-        jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel7.setText("That Template");
+        jButton10.setText("add");
+        jButton10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton10ActionPerformed(evt);
+            }
+        });
 
-        jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel6.setText("Random Template");
-
-        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel5.setText("Think Template");
-
-        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel4.setText("Srai Template");
-
-        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel3.setText("Standard Template");
-
-        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel2.setText("Pattern");
-
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel1.setText("Topic");
+        button_random.setBackground(new java.awt.Color(255, 255, 255));
+        button_random.setText("random");
+        button_random.setToolTipText("</random>");
+        button_random.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                button_randomActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel3)
-                    .addComponent(jLabel4)
-                    .addComponent(jLabel5)
-                    .addComponent(jLabel6)
-                    .addComponent(jLabel8)
-                    .addComponent(jLabel7)
-                    .addComponent(jLabel10))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jTextField4)
-                    .addComponent(jTextField2)
-                    .addComponent(jTextField1)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                        .addComponent(jTextField3)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jButton1))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(jButton19)
-                        .addGap(18, 18, 18)
-                        .addComponent(jButton20)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 13, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jTextField7, javax.swing.GroupLayout.DEFAULT_SIZE, 192, Short.MAX_VALUE))
-                    .addComponent(jTextField6)
-                    .addComponent(jTextField12)
-                    .addComponent(jTextField13)
-                    .addComponent(jTextField5))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton7, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jButton12, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton13, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton14, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton10, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton17, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton18, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap())
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(jLabel2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jTextField1))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(jLabel3)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jTextField5))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(jLabel4)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jTextField7))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(jLabel5)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jTextField13))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(jLabel6)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addComponent(button_random)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jButton10))
+                            .addComponent(jTextField14))))
+                .addGap(10, 10, 10))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton1)
-                    .addComponent(jButton7))
+                    .addComponent(jLabel2)
+                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel2))
+                    .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel3))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel3)
-                    .addComponent(jButton12))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel4)
-                    .addComponent(jButton13))
+                    .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel4))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
-                    .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton14))
+                    .addComponent(jTextField13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel6)
-                    .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton19)
-                    .addComponent(jButton20)
-                    .addComponent(jLabel9)
-                    .addComponent(jButton10))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                    .addComponent(jTextField14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel6))
+                .addGap(2, 2, 2)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel7)
-                    .addComponent(jButton17))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel10))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel8)
-                    .addComponent(jButton18)))
+                    .addComponent(jButton10)
+                    .addComponent(button_random)))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(20, 20, 20)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 580, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addGap(0, 0, Short.MAX_VALUE)
+                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 532, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
@@ -535,25 +763,39 @@ public class NF extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(1, 1, 1)
+                        .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(4, 4, 4)
+                        .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jScrollPane1)))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jButton3)
-                            .addComponent(jButton4)
-                            .addComponent(jButton6)
                             .addComponent(jButton2)
+                            .addComponent(jButton9)
+                            .addComponent(jButton5))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jButton4)
+                            .addComponent(jButton3)
+                            .addComponent(jButton6)
                             .addComponent(jButton8))
-                        .addGap(18, 18, 18)
-                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 169, Short.MAX_VALUE))
-                    .addComponent(jScrollPane1))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton5)
-                    .addComponent(jButton9))
-                .addContainerGap())
+                        .addGap(45, 45, 45))))
         );
 
         pack();
@@ -562,8 +804,7 @@ public class NF extends javax.swing.JFrame {
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
 
             int pos = jTextArea1.getCaretPosition();
-            jTextArea1.insert("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n" + "<aiml>\n", pos);
-            jTextField1.requestFocusInWindow();
+            jTextArea1.insert("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n" + "<aiml>\n\n", pos);
         
         
     }//GEN-LAST:event_jButton3ActionPerformed
@@ -573,12 +814,6 @@ public class NF extends javax.swing.JFrame {
             jTextArea1.setText("");
         
     }//GEN-LAST:event_jButton5ActionPerformed
-
-    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
-
-            jTextField4.requestFocusInWindow();
-        
-    }//GEN-LAST:event_jTextField2ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
                 
@@ -610,53 +845,53 @@ public class NF extends javax.swing.JFrame {
 
     }//GEN-LAST:event_jTextField12ActionPerformed
 
-    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
-            jTextField1.requestFocusInWindow();
-    }//GEN-LAST:event_jTextField3ActionPerformed
-
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
-
-            jTextField2.requestFocusInWindow();
-        
-    }//GEN-LAST:event_jTextField1ActionPerformed
-
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
 
-            jTextField1.setText("");
-            jTextField2.setText("");
             jTextField3.setText("");
-            jTextField4.setText("");
+            jTextField15.setText("");
+            jTextField16.setText("");            
+            jTextField22.setText("");
+            jTextField2.setText("");
+            jTextField4.setText("");            
+            jTextField12.setText(""); 
+            jTextField1.setText("");
             jTextField5.setText("");
-            jTextField7.setText("");  
-            jTextField13.setText("");
-            jTextField12.setText("");   
+            jTextField7.setText("");
+            jTextField13.setText("");            
+            jTextField14.setText("");  
             jTextField6.setText("");
             jTextField8.setText("");  
             jTextField9.setText("");
             jTextField10.setText("");   
             jTextField11.setText(""); 
-            jTextField1.requestFocusInWindow();
+            jTextField23.setText(""); 
+            button_srai.setSelected(false);
+            button_srai.setBackground(Color.white);
+            button_that.setSelected(false);
+            button_that.setBackground(Color.white);
+            button_think.setSelected(false);
+            button_think.setBackground(Color.white);
+            button_random.setSelected(false);
+            button_random.setBackground(Color.white);   
+            button_setname.setSelected(false);
+            button_setname.setBackground(Color.white);
+            button_getname.setSelected(false);
+            button_getname.setBackground(Color.white);  
+            button_star.setSelected(false);
+            button_star.setBackground(Color.white); 
+        jTextField22.requestFocusInWindow();
+        jTextField1.setEditable(false);
+        jTextField1.setBackground(Color.red);
+        jTextField5.setEditable(false);
+        jTextField5.setBackground(Color.red);
+        jTextField7.setEditable(false);
+        jTextField7.setBackground(Color.red);
+        jTextField13.setEditable(false);
+        jTextField13.setBackground(Color.red);
+        jTextField14.setEditable(false);
+        jTextField14.setBackground(Color.red);            
         
     }//GEN-LAST:event_jButton2ActionPerformed
-
-    private void jTextField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField4ActionPerformed
-
-        jTextField5.requestFocusInWindow();
-
-    }//GEN-LAST:event_jTextField4ActionPerformed
-
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-
-        int pos = jTextArea1.getCaretPosition();
-        jTextArea1.insert("\n" + "<topic name=" + "\"" + jTextField3.getText() + "\"" + ">" + "\n", pos);
-    }//GEN-LAST:event_jButton1ActionPerformed
-
-    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-
-        int pos = jTextArea1.getCaretPosition();
-        jTextArea1.insert("\n" + "</topic>" + "\n", pos);
-
-    }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
 
@@ -679,71 +914,6 @@ public class NF extends javax.swing.JFrame {
         
     }//GEN-LAST:event_jButton4ActionPerformed
 
-    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
-
-            int pos = jTextArea1.getCaretPosition();
-                jTextArea1.insert("<li>" + jTextField7.getText() + "</li>" + "\n", pos);
-                jTextField7.setText("");
-    }//GEN-LAST:event_jButton10ActionPerformed
-
-    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
-
-        
-            int pos = jTextArea1.getCaretPosition();
-            jTextArea1.insert("\n" + "<category>" + "\n" + "<pattern>" + jTextField1.getText().toUpperCase() + "</pattern>" + "\n" + "<template>" + jTextField2.getText() + "</template>" + "\n" + "</category>" + "\n", pos); //insert your text
-            
-
-    }//GEN-LAST:event_jButton12ActionPerformed
-
-    private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
-
-            int pos = jTextArea1.getCaretPosition();
-            jTextArea1.insert("\n" + "<category>" + "\n" + "<pattern>" + jTextField1.getText().toUpperCase() + "</pattern>" + "\n" + "<template>" + "<srai>" + jTextField4.getText() + "</srai>" + "</template>" + "\n" + "</category>" + "\n", pos); //insert your text
-
-    }//GEN-LAST:event_jButton13ActionPerformed
-
-    private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
-
-            int pos = jTextArea1.getCaretPosition();
-            jTextArea1.insert("\n" + "<category>" + "\n" + "<pattern>" + jTextField1.getText().toUpperCase() + "</pattern>" + "\n" + "<template>" + "<think>" + jTextField5.getText() + "</think>" + "</template>" + "\n" + "</category>" + "\n", pos); //insert your text       
-
-    }//GEN-LAST:event_jButton14ActionPerformed
-
-    private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
-
-            int pos = jTextArea1.getCaretPosition();
-            jTextArea1.insert("\n" + "<category>" + "\n" + "<pattern>" + jTextField1.getText().toUpperCase() + "</pattern>" + "\n" + "<template>" + "<random>" + "\n", pos);
-
-    }//GEN-LAST:event_jButton19ActionPerformed
-
-    private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton20ActionPerformed
-
-            int pos = jTextArea1.getCaretPosition();
-            jTextArea1.insert("</random>" + "</template>" + "\n" + "</category>" + "\n", pos);
-
-    }//GEN-LAST:event_jButton20ActionPerformed
-
-    private void jTextField7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField7ActionPerformed
-
-            jTextField13.requestFocusInWindow();
-
-
-    }//GEN-LAST:event_jTextField7ActionPerformed
-
-    private void jTextField5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField5ActionPerformed
-
-            jTextField7.requestFocusInWindow();
-
-
-    }//GEN-LAST:event_jTextField5ActionPerformed
-
-    private void jTextField13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField13ActionPerformed
-
-            jTextField12.requestFocusInWindow();
-
-
-    }//GEN-LAST:event_jTextField13ActionPerformed
-
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
 
         int d2 = JOptionPane.showConfirmDialog(null,"Exit AIML assistant?","Please don't go!",JOptionPane.YES_NO_OPTION);
@@ -760,18 +930,10 @@ public class NF extends javax.swing.JFrame {
 
     }//GEN-LAST:event_jButton8ActionPerformed
 
-    private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
-
-            int pos = jTextArea1.getCaretPosition();
-            jTextArea1.insert("\n" + "<category>" + "\n" + "<pattern>" + jTextField1.getText().toUpperCase() + "</pattern>" + "\n" + "<template>" + "<that>" + jTextField13.getText() + "</that>" + "</template>" + "\n" + "</category>" + "\n", pos); //insert your text       
-
-
-    }//GEN-LAST:event_jButton17ActionPerformed
-
     private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
 
             int pos = jTextArea1.getCaretPosition();
-            jTextArea1.insert("\n" + "<category>" + "\n" + "<pattern>" + jTextField1.getText().toUpperCase() + "</pattern>" + "\n" + "<template>" + jTextField12.getText() + "\n" + "<oob><mrl><service>python</service><method>exec</method>" + "\n" + "<param>" + jTextField6.getText() + "</param>" + "\n" + "</mrl></oob> " + "\n" + "</template>" + "\n" + "</category>" + "\n", pos); //insert your text       
+            jTextArea1.insert("\n" + "<category>" + "\n" + "<pattern>" + jTextField22.getText().toUpperCase() + "</pattern>" + "\n" + "<template>" + jTextField12.getText() + "\n" + "<oob><mrl><service>python</service><method>exec</method>" + "\n" + "<param>" + jTextField6.getText() + "</param>" + "\n" + "</mrl></oob> " + "\n" + "</template>" + "\n" + "</category>" + "\n", pos); //insert your text       
 
 
     }//GEN-LAST:event_jButton18ActionPerformed
@@ -779,7 +941,7 @@ public class NF extends javax.swing.JFrame {
     private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton21ActionPerformed
 
             int pos = jTextArea1.getCaretPosition();
-            jTextArea1.insert("\n" + "<category>" + "\n" + "<pattern>" + jTextField8.getText().toUpperCase() + "</pattern>" + "\n" + "<template>" + jTextField9.getText() + "\n" + "<learn>" + "\n" + "<category>" + "\n" + "<pattern>" + jTextField10.getText() + "</pattern>" + "\n" + "<template>" + jTextField11.getText() + "</template>" + "\n" + "</category>" + "\n" + "</learn>" + "\n" + "</template>" + "\n" + "</category>"+ "\n", pos);
+            jTextArea1.insert("<category>" + "\n" + "<pattern>" + jTextField8.getText().toUpperCase() + "</pattern>" + "\n" + "<template>" + jTextField9.getText() + "\n" + "<learn>" + "\n" + "<category>" + "\n" + "<pattern>" + jTextField10.getText() + "</pattern>" + "\n" + "<template>" + jTextField11.getText() + "</template>" + "\n" + "</category>" + "\n" + "</learn>" + "\n" + "</template>" + "\n" + "</category>"+ "\n" + "\n", pos);
            
 
     }//GEN-LAST:event_jButton21ActionPerformed
@@ -807,6 +969,339 @@ public class NF extends javax.swing.JFrame {
             jTextField11.requestFocusInWindow();
 
     }//GEN-LAST:event_jTextField10ActionPerformed
+
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+
+        int pos = jTextArea1.getCaretPosition();
+        jTextArea1.insert("\n" + "</topic>" + "\n", pos);
+    }//GEN-LAST:event_jButton7ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+
+        int pos = jTextArea1.getCaretPosition();
+        jTextArea1.insert("\n" + "<topic name=" + "\"" + jTextField3.getText() + "\"" + ">" + "\n", pos);
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
+
+            jTextField22.requestFocusInWindow();
+        
+    }//GEN-LAST:event_jTextField3ActionPerformed
+
+    private void jButton23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton23ActionPerformed
+            
+            int pos = jTextArea1.getCaretPosition();
+
+            jTextArea1.insert("</template>" + "\n" + "</category>" + "\n" + "\n", pos);
+        
+            if (button_srai.isSelected()){
+            jTextArea1.insert(button_srai.getToolTipText(),pos);
+            }
+            if (button_think.isSelected()){
+            jTextArea1.insert(button_think.getToolTipText(),pos);
+            }   
+            if (button_that.isSelected()){
+            jTextArea1.insert(button_that.getToolTipText(),pos);
+            }   
+            if (button_random.isSelected()){
+            jTextArea1.insert(button_random.getToolTipText() + "\n",pos);
+            }
+
+            jTextArea1.insert(jTextField23.getText(), pos);
+                         
+            if (button_random.isSelected()){
+            jTextArea1.insert("<random>" + "\n" ,pos);
+            }             
+            if (button_that.isSelected()){
+            jTextArea1.insert("<that>" ,pos);
+            } 
+            if (button_think.isSelected()){
+            jTextArea1.insert("<think>" ,pos);
+            }
+            if (button_srai.isSelected()){
+            jTextArea1.insert("<srai>" ,pos);
+            }               
+                            
+            jTextArea1.insert("<template>", pos);
+            
+            jTextArea1.insert("<category>" + "\n" + "<pattern>" + jTextField22.getText().toUpperCase() + "</pattern>" + "\n", pos);            
+
+    }//GEN-LAST:event_jButton23ActionPerformed
+
+    private void button_sraiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button_sraiActionPerformed
+
+            if (button_srai.isSelected()){
+            button_srai.setBackground(Color.red);
+            }
+            else {
+            button_srai.setBackground(Color.white);
+            }
+
+    }//GEN-LAST:event_button_sraiActionPerformed
+
+    private void button_thinkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button_thinkActionPerformed
+
+            if (button_think.isSelected()){
+            button_think.setBackground(Color.red);
+            }
+            else {
+            button_think.setBackground(Color.white);
+            }
+
+    }//GEN-LAST:event_button_thinkActionPerformed
+
+    private void button_thatActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button_thatActionPerformed
+
+            if (button_that.isSelected()){
+            button_that.setBackground(Color.red);
+            }
+            else {
+            button_that.setBackground(Color.white);
+            }
+
+    }//GEN-LAST:event_button_thatActionPerformed
+
+    private void button_randomActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button_randomActionPerformed
+        
+        
+            jTextField1.setEditable(true);
+            jTextField1.setBackground(Color.white);
+            jTextField5.setEditable(true);
+            jTextField5.setBackground(Color.white);
+            jTextField7.setEditable(true);
+            jTextField7.setBackground(Color.white);
+            jTextField13.setEditable(true);
+            jTextField13.setBackground(Color.white);
+            jTextField14.setEditable(true);
+            jTextField14.setBackground(Color.white);
+            
+            if (button_random.isSelected()){
+            button_random.setBackground(Color.red);
+            }
+            else {
+            button_random.setBackground(Color.white);
+            jTextField1.setEditable(false);
+            jTextField1.setBackground(Color.red);
+            jTextField1.setText("");
+            jTextField5.setEditable(false);
+            jTextField5.setBackground(Color.red);
+            jTextField5.setText("");
+            jTextField7.setEditable(false);
+            jTextField7.setBackground(Color.red);
+            jTextField7.setText("");
+            jTextField13.setEditable(false);
+            jTextField13.setBackground(Color.red);
+            jTextField13.setText("");
+            jTextField14.setEditable(false);
+            jTextField14.setBackground(Color.red);
+            jTextField14.setText("");            
+            }
+
+    }//GEN-LAST:event_button_randomActionPerformed
+
+    private void jButton24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton24ActionPerformed
+
+            int pos = jTextArea1.getCaretPosition();
+
+            jTextArea1.insert(jTextField4.getText() + "</template>" + "\n" + "</category>" + "\n" + "\n", pos);
+            
+            if (button_think1.isSelected()){
+            jTextArea1.insert(button_think.getToolTipText(),pos);
+            }           
+            if (button_setname.isSelected()){
+            jTextArea1.insert(button_setname.getToolTipText(),pos);
+            }
+            if (button_getname.isSelected()){
+            jTextArea1.insert(button_getname.getToolTipText(),pos);
+            }  
+            if (button_star.isSelected()){
+            jTextArea1.insert(button_star.getToolTipText(),pos);
+            }
+           
+            jTextArea1.insert(jTextField15.getText(), pos);           
+                        
+            if (button_getname.isSelected()){
+            jTextArea1.insert("<get name=" + "\"" + jTextField16.getText() ,pos);
+            }  
+            if (button_setname.isSelected()){
+            jTextArea1.insert("<set name="+ "\"" ,pos);
+            }               
+            if (button_think1.isSelected()){
+            jTextArea1.insert("<think>" ,pos);
+            }               
+            jTextArea1.insert("<template>" + jTextField2.getText(), pos);
+            
+            jTextArea1.insert("<category>" + "\n" + "<pattern>" + jTextField22.getText().toUpperCase() + "</pattern>" + "\n", pos);            
+
+
+    }//GEN-LAST:event_jButton24ActionPerformed
+
+    private void jTextField22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField22ActionPerformed
+
+            jTextField23.requestFocusInWindow();
+
+    }//GEN-LAST:event_jTextField22ActionPerformed
+
+    private void jTextField23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField23ActionPerformed
+
+            jTextField2.requestFocusInWindow();
+
+    }//GEN-LAST:event_jTextField23ActionPerformed
+
+    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+
+            jTextField15.requestFocusInWindow();
+
+    }//GEN-LAST:event_jTextField2ActionPerformed
+
+    private void jTextField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField4ActionPerformed
+
+            jTextField12.requestFocusInWindow();
+
+    }//GEN-LAST:event_jTextField4ActionPerformed
+
+    private void button_setnameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button_setnameActionPerformed
+
+            if (button_setname.isSelected()){
+            button_setname.setBackground(Color.red);
+            }
+            else {
+            button_setname.setBackground(Color.white);
+            }
+
+    }//GEN-LAST:event_button_setnameActionPerformed
+
+    private void button_getnameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button_getnameActionPerformed
+
+            if (button_getname.isSelected()){
+            button_getname.setBackground(Color.red);
+            }
+            else {
+            button_getname.setBackground(Color.white);
+            }
+
+    }//GEN-LAST:event_button_getnameActionPerformed
+
+    private void button_starActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button_starActionPerformed
+
+            if (button_star.isSelected()){
+            button_star.setBackground(Color.red);
+            }
+            else {
+            button_star.setBackground(Color.white);
+            }
+
+    }//GEN-LAST:event_button_starActionPerformed
+
+    private void jTextField5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField5ActionPerformed
+
+            jTextField7.requestFocusInWindow();
+
+    }//GEN-LAST:event_jTextField5ActionPerformed
+
+    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+
+       
+            int pos = jTextArea1.getCaretPosition();
+
+            jTextArea1.insert("</template>" + "\n" + "</category>" + "\n" + "\n", pos);
+           
+            if (button_random.isSelected()){
+            jTextArea1.insert(button_random.getToolTipText() + "\n",pos);
+            }
+            //if (button_li.isSelected()){
+            //jTextArea1.insert(button_li.getToolTipText() + "\n",pos);
+            //}
+            if(jTextField14.getText().equals("")) {
+                }
+            else {
+                jTextArea1.insert("<li>" + jTextField14.getText() + "</li>" + "\n", pos);
+                }            
+            if(jTextField13.getText().equals("")) {
+                }
+            else {
+                jTextArea1.insert("<li>" + jTextField13.getText() + "</li>" + "\n", pos);
+                }
+            if(jTextField7.getText().equals("")) {
+                }
+            else {
+                jTextArea1.insert("<li>" + jTextField7.getText() + "</li>" + "\n", pos);
+                }
+            if(jTextField5.getText().equals("")) {
+                }
+            else {
+                jTextArea1.insert("<li>" + jTextField5.getText() + "</li>" + "\n", pos);
+                }
+            if(jTextField1.getText().equals("")) {
+                }
+            else {
+                jTextArea1.insert("<li>" + jTextField1.getText() + "</li>" + "\n", pos);
+                }
+            //if (button_li.isSelected()){
+            //jTextArea1.insert("<li>" ,pos);
+            //}              
+            if (button_random.isSelected()){
+            jTextArea1.insert("<random>" + "\n" ,pos);
+            }                          
+                            
+            jTextArea1.insert("<template>", pos);
+            
+            jTextArea1.insert("<category>" + "\n" + "<pattern>" + jTextField22.getText().toUpperCase() + "</pattern>" + "\n", pos); 
+
+    }//GEN-LAST:event_jButton10ActionPerformed
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+
+                    jTextField5.requestFocusInWindow();
+
+            
+
+    }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void jTextField7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField7ActionPerformed
+
+            jTextField13.requestFocusInWindow();
+
+
+    }//GEN-LAST:event_jTextField7ActionPerformed
+
+    private void jTextField14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField14ActionPerformed
+
+
+
+    }//GEN-LAST:event_jTextField14ActionPerformed
+
+    private void jTextField13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField13ActionPerformed
+
+            jTextField14.requestFocusInWindow();
+
+
+    }//GEN-LAST:event_jTextField13ActionPerformed
+
+    private void jTextField15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField15ActionPerformed
+
+            jTextField16.requestFocusInWindow();
+
+
+    }//GEN-LAST:event_jTextField15ActionPerformed
+
+    private void jTextField16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField16ActionPerformed
+
+            jTextField4.requestFocusInWindow();
+
+
+    }//GEN-LAST:event_jTextField16ActionPerformed
+
+    private void button_think1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button_think1ActionPerformed
+
+            if (button_think1.isSelected()){
+            button_think1.setBackground(Color.red);
+            }
+            else {
+            button_think1.setBackground(Color.white);
+            }
+
+    }//GEN-LAST:event_button_think1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -844,17 +1339,21 @@ public class NF extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JToggleButton button_getname;
+    private javax.swing.JToggleButton button_random;
+    private javax.swing.JToggleButton button_setname;
+    private javax.swing.JToggleButton button_srai;
+    private javax.swing.JToggleButton button_star;
+    private javax.swing.JToggleButton button_that;
+    private javax.swing.JToggleButton button_think;
+    private javax.swing.JToggleButton button_think1;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton12;
-    private javax.swing.JButton jButton13;
-    private javax.swing.JButton jButton14;
-    private javax.swing.JButton jButton17;
     private javax.swing.JButton jButton18;
-    private javax.swing.JButton jButton19;
     private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton20;
     private javax.swing.JButton jButton21;
+    private javax.swing.JButton jButton23;
+    private javax.swing.JButton jButton24;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
@@ -873,22 +1372,30 @@ public class NF extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel5;
+    private javax.swing.JPanel jPanel6;
+    private javax.swing.JPanel jPanel7;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextArea jTextArea1;
-    private javax.swing.JTextField jTextField1;
+    public static javax.swing.JTextArea jTextArea1;
+    public static javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField10;
     private javax.swing.JTextField jTextField11;
     private javax.swing.JTextField jTextField12;
     private javax.swing.JTextField jTextField13;
+    private javax.swing.JTextField jTextField14;
+    private javax.swing.JTextField jTextField15;
+    private javax.swing.JTextField jTextField16;
     private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField22;
+    private javax.swing.JTextField jTextField23;
     private javax.swing.JTextField jTextField3;
     private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
+    public static javax.swing.JTextField jTextField5;
     private javax.swing.JTextField jTextField6;
     private javax.swing.JTextField jTextField7;
     private javax.swing.JTextField jTextField8;
